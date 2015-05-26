@@ -16,10 +16,10 @@ Binaries are distributed under the same GPL license as Gnu Emacs (see LICENSE.tx
 
 * Tested only under Android L (Lollipop)
 * Works in most terminals, but crashes JuiceSSH (reason unknown)
-* Dates on *.elc files are earlier than dates on *.el files after running Michał's build scripts; you should probably fix that with something like
+* Dates on ``*.elc`` files are earlier than dates on ``*.el`` files after running Michał's build scripts; you should probably fix that with something like
     find /sdcard/emacs/lisp -name '*.elc' -print0 | xargs -0 touch
 * You may need to copy additional terminal definitions into terminfo (e.g. "linux")
 * Starts with the message "WARNING: linker: /data/local/bin/emacs.bin has text relocations. This is wasting memory and prevents security hardening. Please fix." -- this seems to be a common problem in Android L, and I have not yet found the right combination of GCC flags to fix it.
 
 
-David Megginson, 2015-05-26
+_David Megginson, Ottawa, Canada, 2015-05-26_
